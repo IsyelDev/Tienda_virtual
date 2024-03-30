@@ -4,7 +4,7 @@
     --description-card: #616062;
     --main: #F7F5F7;
     --description-precio: #06853f;
-    --font-header:"Kaushan Script", cursive;
+    --font-header:"Inter Tight", sans-serif;
 }
 
 * {
@@ -86,7 +86,7 @@ input:placeholder-shown {
 
 .container__lista a {
     color: white;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-family: var(--font-header);
     text-transform: capitalize;
 }
@@ -109,17 +109,36 @@ input:placeholder-shown {
 section {
     height: 250px;
     border: 1px solid steelblue;
-    background-color: #06853f;
+    min-width: 1220px;
     width: 100%;
-
+    background-color: #06853f;
 }
 
-.container-section img {
-   height: 250px;
-   width: 100%;
-   object-fit: cover;
-
+.container__section-texto{
+    position: absolute;
+    color: white;
+    font-family: var(--font-header);
+    left: 20%;
+    top: 20%;
 }
+
+.container__section-texto h2{
+    font-size: 2rem;
+   }
+.container__section-texto h3{
+ font-size: 7rem;
+}
+
+
+.container-section img{
+    width: 100%;
+    object-fit: cover;
+    max-height:250px;
+    display: block;
+}
+
+
+
 
 
 main {
@@ -197,5 +216,32 @@ footer {
         color: darkblue;
     }
 
-}
 
+    section {
+        height: 200px;
+        border: 1px solid steelblue;
+        min-width:350px;
+        background-color: #06853f;
+    }
+    
+    .container-section{
+        height: 200px;
+    }
+    .container-section img{
+        object-fit: cover;
+        object-position: center;
+        height:250px;
+        width: 100%;
+    }
+
+    .container__section-texto{
+        left: 10%;
+        top: 60%;
+}
+.container__section-texto h2{
+    font-size: 2rem;
+}
+.container__section-texto h3{
+    font-size: 5rem;
+}
+}
