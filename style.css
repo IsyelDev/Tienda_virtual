@@ -6,17 +6,19 @@
     --description-precio: #06853f;
     --font-header: "Inter Tight", sans-serif;
 }
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     text-decoration: none;
     list-style: none;
+
 }
+
 /* header */
 header {
     height: 150px;
-    border: 1px solid crimson;
     background-color: var(--header);
     width: 100%;
     min-width: 1220px;
@@ -37,6 +39,7 @@ header {
     height: 150px;
 
 }
+
 .header__superior {
     display: flex;
     margin: 20px auto;
@@ -46,11 +49,13 @@ header {
 .header__superior-logo {
     width: 33%;
 }
+
 .header__superior-logo img {
     width: 50%;
     margin: 0 40px;
     display: block;
 }
+
 input {
     border-radius: 12px;
     border: none;
@@ -58,23 +63,27 @@ input {
     width: 33%;
     outline: none;
 }
+
 input:placeholder-shown {
     text-align: center;
     font-size: 1rem;
     color: gray;
     opacity: 0.2px;
 }
+
 .container__navegacion {
     width: 100%;
     height: 50px;
     max-width: 1520px;
 }
+
 .container__lista {
     display: flex;
     height: 100%;
     justify-content: space-evenly;
     line-height: 50px;
 }
+
 .container__lista a {
     color: white;
     font-size: 1.1rem;
@@ -93,10 +102,12 @@ input:placeholder-shown {
     width: 33%;
     align-items: center;
 }
+
 .header__superior-icono img {
     width: 20px;
     height: 20px;
 }
+
 .header__superior-icono img:hover,
 i:hover {
     width: 30px;
@@ -110,18 +121,20 @@ i:hover {
     opacity: 0.50;
     padding: 5px;
 }
+
 /* Section */
 section {
     height: 250px;
-    border: 1px solid steelblue;
     min-width: 1220px;
     width: 100%;
     background-color: #06853f;
+    overflow: hidden;
 }
 
 .container-section {
     position: relative;
 }
+
 .container__section-texto {
     position: absolute;
     color: white;
@@ -129,6 +142,7 @@ section {
     left: 20%;
     top: 20%;
 }
+
 .container__section-texto h2 {
     font-size: 2rem;
 }
@@ -136,6 +150,7 @@ section {
 .container__section-texto h3 {
     font-size: 7rem;
 }
+
 .container-section img {
     width: 100%;
     object-fit: cover;
@@ -146,9 +161,68 @@ section {
 
 main {
     height: auto;
-    border: 1px solid orangered;
-    background-color: crimson;
     padding: 0.10px;
+    overflow: hidden;
+
+    margin: 0 auto;
+}
+
+.container-cards {
+    max-width: 1200px;
+
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    outline: 1px solid red;
+}
+
+.container-card {
+    width: 350px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+}
+
+.container__imagen {
+    width: auto;
+    height: 400px;
+
+}
+
+.container__imagen img {
+    width: 100%;
+    display: block;
+    height: 400px;
+    object-fit: cover;
+
+}
+
+.container__description {
+    background-color: hwb(0 90% 5% / 0.973);
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 0px 0px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+.container__precio {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container__description span {
+    font-size: 0.9rem;
+}
+
+.container__description p {
+    color: #06853f;
+    font-weight: bold;
 }
 
 /* Footer */
@@ -157,9 +231,10 @@ footer {
     min-width: 1220px;
     height: 220px;
     width: 100%;
-    border: 1px solid #06853f;
     background-color: var(--footer);
+    overflow: hidden;
 }
+
 .container__footer {
     width: 100%;
     max-width: 1200px;
@@ -169,18 +244,21 @@ footer {
     height: 140px;
     border-bottom: 1px solid white;
 }
+
 .container__footer-navegacion {
     display: flex;
     flex-direction: column;
     gap: 20px;
     color: white;
 }
+
 .container__footer-lista a {
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
     color: aliceblue;
 }
+
 .politicas {
     display: flex;
     justify-content: space-evenly;
@@ -188,11 +266,13 @@ footer {
     width: 90%;
     color: #F7F5F7;
 }
+
 .politicas h4 {
     font-size: 0.9rem;
     font-weight: bold;
     text-transform: capitalize;
 }
+
 .politicas span {
     color: crimson;
     font-size: 1.3rem;
@@ -277,6 +357,7 @@ i {
         transition: 2s ease;
         color: darkblue;
     }
+
     section {
         height: 200px;
         border: 1px solid steelblue;
@@ -284,30 +365,69 @@ i {
         background-color: #06853f;
         padding: 0.10px;
     }
+
     .container-section {
         height: 200px;
     }
+
     .container-section img {
         object-fit: cover;
         object-position: center;
         height: 250px;
         width: 100%;
     }
+
     .container__section-texto {
         left: 10%;
         top: 30%;
     }
+
     .container__section-texto h2 {
         font-size: 2rem;
     }
+
     .container__section-texto h3 {
         font-size: 4.5rem;
     }
+
+    /* main */
+
+    .container__imagen {
+        width: 300px;
+        height: 400px;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        margin: 0 auto;
+
+    }
+
+    .container__imagen img {
+        width: 60%;
+        height: 100%;
+        object-fit: cover;
+        outline: 1px solid red;
+
+    }
+
+    .container__description {
+        min-width: 60px;
+    }
+    
+    .container-card {
+        width: 300px;
+        height: 420px;
+
+    }
+    .container-cards{
+    }
+
     /* footer responsive */
     footer {
         min-width: 350px;
         min-height: 900px;
     }
+
     .container__footer {
         flex-direction: column;
         justify-content: center;
@@ -315,22 +435,26 @@ i {
         height: 650px;
         row-gap: 15px;
     }
+
     .container__footer-navegacion h4 {
         font-size: 1.2rem;
         width: 150px;
         height: 30px;
     }
+
     .footer_iconos {
         justify-content: center;
         flex-wrap: wrap;
         font-size: 20px;
         max-width: 350px;
     }
+
     .politicas {
         flex-direction: column;
         row-gap: 50px;
         margin: 20px;
     }
+
     .politicas h4 {
         text-align: center;
     }
