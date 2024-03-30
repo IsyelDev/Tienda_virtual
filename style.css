@@ -52,7 +52,7 @@ header {
 
 .header__superior-logo img {
     width: 50%;
-    margin: 0 auto;
+    margin: 0 40px;
     display: block;
 }
 
@@ -74,7 +74,7 @@ input:placeholder-shown {
 .container__navegacion {
     width: 100%;
     height: 50px;
-
+    max-width: 1520px;
 }
 
 .container__lista {
@@ -89,7 +89,13 @@ input:placeholder-shown {
     font-size: 1.1rem;
     font-family: var(--font-header);
     text-transform: capitalize;
+    display: block;
+    width: 150px;
+    text-align: center;
+    margin-left: 10px;
 }
+
+
 
 .header__superior-icono {
     display: flex;
@@ -104,6 +110,20 @@ input:placeholder-shown {
     height: 20px;
 }
 
+.header__superior-icono img:hover,
+i:hover {
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+}
+
+.container__lista a:hover {
+    display: block;
+    border-radius: 10px;
+    opacity: 0.50;
+    padding: 5px;
+}
+
 /* Section */
 
 section {
@@ -112,6 +132,10 @@ section {
     min-width: 1220px;
     width: 100%;
     background-color: #06853f;
+}
+
+.container-section {
+    position: relative;
 }
 
 .container__section-texto {
@@ -139,22 +163,75 @@ section {
 }
 
 
-
-
-
 main {
     height: auto;
     border: 1px solid orangered;
     background-color: crimson;
+    padding: 0.10px;
 }
 
+/* Footer */
 footer {
-    height: 250px;
+    margin: 0;
+    min-width:1220px;
+    height: 220px;
+    width: 100%;
     border: 1px solid #06853f;
     background-color: var(--footer);
 }
 
+.container__footer {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-evenly;
+    margin:10px auto;
+    height: 140px;
+    border-bottom: 1px solid white;
+}
 
+.container__footer-navegacion {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+}
+
+.container__footer-lista a {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    color: aliceblue;
+}
+
+.politicas {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 180px;
+    width: 90%;
+    color: #F7F5F7;
+}
+
+.politicas h4 {
+    font-size: 0.8rem;
+}
+
+.politicas span {
+    color: crimson;
+    font-size: 1.3rem;
+}
+
+.footer_iconos {
+    display: flex;
+    gap: 30px;
+}
+
+.footer_iconos img,
+i {
+    width: 25px;
+    color: #F7F5F7;
+    font-size: 25px;
+}
 
 @media(max-width:768px) {
     header {
@@ -177,6 +254,11 @@ footer {
 
     .header__superior-logo {
         width: 300px;
+ 
+    }
+    .header__superior-logo img{
+        display: block;
+        margin: 0 auto;
     }
 
     .header__superior {
@@ -223,6 +305,7 @@ footer {
         border: 1px solid steelblue;
         min-width: 350px;
         background-color: #06853f;
+        padding: 0.10px;
     }
 
     .container-section {
@@ -238,7 +321,7 @@ footer {
 
     .container__section-texto {
         left: 10%;
-        top: 70%;
+        top: 30%;
     }
 
     .container__section-texto h2 {
@@ -248,4 +331,48 @@ footer {
     .container__section-texto h3 {
         font-size: 4.5rem;
     }
+
+    /* footer responsive */
+    footer {
+        min-width: 350px;
+        min-height: 900px;
+
+    }
+
+    .container__footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 650px;
+        row-gap: 10px;
+
+    }
+
+    .container__footer-navegacion h4 {
+        font-size: 1rem;
+        width: 120px;
+        height: 30px;
+    }
+    .container__footer-navegacion{
+        margin-left: 40px;
+        
+ }
+
+    .footer_iconos {
+        justify-content: center;
+        flex-wrap: wrap;
+        font-size: 20px;
+        max-width: 350px;
+    }
+
+    .politicas {
+        flex-direction: column;
+        row-gap: 50px;
+        margin: 20px;
+    }
+
+    .politicas h4 {
+        text-align: center;
+    }
+
 }
