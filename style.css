@@ -4,6 +4,7 @@
     --description-card: #616062;
     --main: #F7F5F7;
     --description-precio: #06853f;
+    --font-header:"Kaushan Script", cursive;
 }
 
 * {
@@ -85,8 +86,9 @@ input:placeholder-shown {
 
 .container__lista a {
     color: white;
-    font-size: 1.2rem;
-    font-weight: bold;
+    font-size: 1rem;
+    font-family: var(--font-header);
+    text-transform: capitalize;
 }
 
 .header__superior-icono {
