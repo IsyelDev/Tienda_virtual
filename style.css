@@ -6,7 +6,6 @@
     --description-precio: #06853f;
     --font-header: "Inter Tight", sans-serif;
 }
-
 * {
     box-sizing: border-box;
     padding: 0;
@@ -14,7 +13,6 @@
     text-decoration: none;
     list-style: none;
 }
-
 /* header */
 header {
     height: 150px;
@@ -23,6 +21,7 @@ header {
     width: 100%;
     min-width: 1220px;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 /* .container {
@@ -32,14 +31,12 @@ header {
     margin: 0 auto;
     min-height: inherit;
 } */
-
 .container-header {
     width: 1220px;
     margin: 0 auto;
     height: 150px;
 
 }
-
 .header__superior {
     display: flex;
     margin: 20px auto;
@@ -49,13 +46,11 @@ header {
 .header__superior-logo {
     width: 33%;
 }
-
 .header__superior-logo img {
     width: 50%;
     margin: 0 40px;
     display: block;
 }
-
 input {
     border-radius: 12px;
     border: none;
@@ -63,27 +58,23 @@ input {
     width: 33%;
     outline: none;
 }
-
 input:placeholder-shown {
     text-align: center;
     font-size: 1rem;
     color: gray;
     opacity: 0.2px;
 }
-
 .container__navegacion {
     width: 100%;
     height: 50px;
     max-width: 1520px;
 }
-
 .container__lista {
     display: flex;
     height: 100%;
     justify-content: space-evenly;
     line-height: 50px;
 }
-
 .container__lista a {
     color: white;
     font-size: 1.1rem;
@@ -95,8 +86,6 @@ input:placeholder-shown {
     margin-left: 10px;
 }
 
-
-
 .header__superior-icono {
     display: flex;
     gap: 30px;
@@ -104,12 +93,10 @@ input:placeholder-shown {
     width: 33%;
     align-items: center;
 }
-
 .header__superior-icono img {
     width: 20px;
     height: 20px;
 }
-
 .header__superior-icono img:hover,
 i:hover {
     width: 30px;
@@ -123,9 +110,7 @@ i:hover {
     opacity: 0.50;
     padding: 5px;
 }
-
 /* Section */
-
 section {
     height: 250px;
     border: 1px solid steelblue;
@@ -137,7 +122,6 @@ section {
 .container-section {
     position: relative;
 }
-
 .container__section-texto {
     position: absolute;
     color: white;
@@ -145,7 +129,6 @@ section {
     left: 20%;
     top: 20%;
 }
-
 .container__section-texto h2 {
     font-size: 2rem;
 }
@@ -153,8 +136,6 @@ section {
 .container__section-texto h3 {
     font-size: 7rem;
 }
-
-
 .container-section img {
     width: 100%;
     object-fit: cover;
@@ -173,37 +154,33 @@ main {
 /* Footer */
 footer {
     margin: 0;
-    min-width:1220px;
+    min-width: 1220px;
     height: 220px;
     width: 100%;
     border: 1px solid #06853f;
     background-color: var(--footer);
 }
-
 .container__footer {
     width: 100%;
     max-width: 1200px;
     display: flex;
     justify-content: space-evenly;
-    margin:10px auto;
+    margin: 10px auto;
     height: 140px;
     border-bottom: 1px solid white;
 }
-
 .container__footer-navegacion {
     display: flex;
     flex-direction: column;
     gap: 20px;
     color: white;
 }
-
 .container__footer-lista a {
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
     color: aliceblue;
 }
-
 .politicas {
     display: flex;
     justify-content: space-evenly;
@@ -211,11 +188,11 @@ footer {
     width: 90%;
     color: #F7F5F7;
 }
-
 .politicas h4 {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: capitalize;
 }
-
 .politicas span {
     color: crimson;
     font-size: 1.3rem;
@@ -232,6 +209,7 @@ i {
     color: #F7F5F7;
     font-size: 25px;
 }
+
 
 @media(max-width:768px) {
     header {
@@ -254,9 +232,10 @@ i {
 
     .header__superior-logo {
         width: 300px;
- 
+
     }
-    .header__superior-logo img{
+
+    .header__superior-logo img {
         display: block;
         margin: 0 auto;
     }
@@ -298,8 +277,6 @@ i {
         transition: 2s ease;
         color: darkblue;
     }
-
-
     section {
         height: 200px;
         border: 1px solid steelblue;
@@ -307,70 +284,53 @@ i {
         background-color: #06853f;
         padding: 0.10px;
     }
-
     .container-section {
         height: 200px;
     }
-
     .container-section img {
         object-fit: cover;
         object-position: center;
         height: 250px;
         width: 100%;
     }
-
     .container__section-texto {
         left: 10%;
         top: 30%;
     }
-
     .container__section-texto h2 {
         font-size: 2rem;
     }
-
     .container__section-texto h3 {
         font-size: 4.5rem;
     }
-
     /* footer responsive */
     footer {
         min-width: 350px;
         min-height: 900px;
-
     }
-
     .container__footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
         height: 650px;
-        row-gap: 10px;
-
+        row-gap: 15px;
     }
-
     .container__footer-navegacion h4 {
-        font-size: 1rem;
-        width: 120px;
+        font-size: 1.2rem;
+        width: 150px;
         height: 30px;
     }
-    .container__footer-navegacion{
-        margin-left: 40px;
-        
- }
-
     .footer_iconos {
         justify-content: center;
         flex-wrap: wrap;
         font-size: 20px;
         max-width: 350px;
     }
-
     .politicas {
         flex-direction: column;
         row-gap: 50px;
         margin: 20px;
     }
-
     .politicas h4 {
         text-align: center;
     }
