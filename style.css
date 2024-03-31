@@ -21,7 +21,7 @@ body{
 /* Header */
 header {
     height: 150px;
-    background-color: crimson;
+    background-color: var(--header);
     width: 100%;
     min-width: 350px; /* Modificado para responsive */
     margin: 0 auto;
