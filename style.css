@@ -156,6 +156,7 @@ main {
     padding: 0.10px;
     overflow: hidden;
     width: 100vw;
+    background-color: white;
 }
 
 .container-cards {
@@ -215,13 +216,16 @@ main {
 
 /* Footer */
 footer {
+    position: absolute;
     margin: 0;
     min-width: 350px; /* Modificado para responsive */
     height: 220px;
     width: 100%;
     background-color: var(--footer);
-    overflow: hidden;
+    margin-bottom: 0;
 }
+
+
 
 .container__footer {
     width: 100%;
@@ -229,7 +233,7 @@ footer {
     display: flex;
     justify-content: space-evenly;
     margin: 10px auto;
-    height: 140px;
+    height: 150px;
     border-bottom: 1px solid white;
 }
 
@@ -253,6 +257,7 @@ footer {
     margin: 0 180px;
     width: 90%;
     color: #F7F5F7;
+    height: 10px;
 }
 
 .politicas h4 {
@@ -271,16 +276,14 @@ footer {
     gap: 30px;
 }
 
-.footer_iconos img,
-i {
-    width: 25px;
-    color: #F7F5F7;
-    font-size: 25px;
+footer img {
+width: 20px;
+height: 20px;    
 }
 
 @media(max-width:768px) {
     /* Styles para pantallas de 768px o menos */
-
+    
     /* Header */
     header {
         min-width: 350px;
