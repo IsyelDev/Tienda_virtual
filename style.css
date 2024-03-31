@@ -13,37 +13,29 @@
     margin: 0;
     text-decoration: none;
     list-style: none;
-
 }
 
-/* header */
+/* Header */
 header {
     height: 150px;
     background-color: var(--header);
     width: 100%;
-    min-width: 1220px;
+    min-width: 350px; /* Modificado para responsive */
     margin: 0 auto;
     overflow: hidden;
 }
 
-/* .container {
-    width: 1220px;
-    border: 1px solid blue;
-    height: inherit;
-    margin: 0 auto;
-    min-height: inherit;
-} */
 .container-header {
-    width: 1220px;
+    width: 100%; /* Modificado para responsive */
+    max-width: 1220px;
     margin: 0 auto;
     height: 150px;
-
 }
 
 .header__superior {
     display: flex;
     margin: 20px auto;
-    flex-wrap: wrap
+    flex-wrap: wrap;
 }
 
 .header__superior-logo {
@@ -64,16 +56,15 @@ input {
     outline: none;
 }
 
-input:placeholder-shown {
+input::placeholder {
     text-align: center;
     font-size: 1rem;
     color: gray;
-    opacity: 0.2px;
+    opacity: 0.5; /* Cambiado a 0.5 */
 }
 
 .container__navegacion {
     width: 100%;
-    height: 50px;
     max-width: 1520px;
 }
 
@@ -118,16 +109,15 @@ i:hover {
 .container__lista a:hover {
     display: block;
     border-radius: 10px;
-    opacity: 0.50;
+    opacity: 0.5; /* Cambiado a 0.5 */
     padding: 5px;
 }
 
 /* Section */
 section {
     height: 250px;
-    min-width: 1220px;
+    min-width: 350px; /* Modificado para responsive */
     width: 100%;
-    background-color: #06853f;
     overflow: hidden;
 }
 
@@ -158,29 +148,26 @@ section {
     display: block;
 }
 
-
+/* Main */
 main {
     height: auto;
     padding: 0.10px;
     overflow: hidden;
-
     width: 100vw;
-    
 }
 
 .container-cards {
-    min-width: 400px;
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-
+    justify-content: center; /* Centra los elementos */
 }
 
 .container-card {
     width: 350px;
-
     height: 550px;
     display: flex;
     flex-direction: column;
@@ -190,7 +177,6 @@ main {
 .container__imagen {
     width: auto;
     height: 400px;
-
 }
 
 .container__imagen img {
@@ -198,7 +184,6 @@ main {
     display: block;
     height: 400px;
     object-fit: cover;
-
 }
 
 .container__description {
@@ -210,7 +195,6 @@ main {
     display: flex;
     flex-direction: column;
     gap: 5px;
-
 }
 
 .container__precio {
@@ -230,7 +214,7 @@ main {
 /* Footer */
 footer {
     margin: 0;
-    min-width: 1220px;
+    min-width: 350px; /* Modificado para responsive */
     height: 220px;
     width: 100%;
     background-color: var(--footer);
@@ -292,8 +276,10 @@ i {
     font-size: 25px;
 }
 
-
 @media(max-width:768px) {
+    /* Styles para pantallas de 768px o menos */
+
+    /* Header */
     header {
         min-width: 350px;
         min-height: 475px;
@@ -304,7 +290,6 @@ i {
         width: inherit;
         justify-content: center;
         align-items: center;
-
     }
 
     input {
@@ -314,7 +299,6 @@ i {
 
     .header__superior-logo {
         width: 300px;
-
     }
 
     .header__superior-logo img {
@@ -360,6 +344,7 @@ i {
         color: darkblue;
     }
 
+    /* Section */
     section {
         height: 200px;
         border: 1px solid steelblue;
@@ -367,69 +352,66 @@ i {
         background-color: #06853f;
         padding: 0.10px;
     }
-    
+
     .container-section {
         height: 200px;
     }
-    
+
     .container-section img {
         object-fit: cover;
         object-position: center;
         height: 250px;
         width: 100%;
     }
-    
+
     .container__section-texto {
         left: 10%;
         top: 30%;
     }
-    
+
     .container__section-texto h2 {
         font-size: 2rem;
     }
-    
+
     .container__section-texto h3 {
         font-size: 4.5rem;
     }
-    
-    /* main */
-    
+
+    /* Main */
     .container__imagen {
         width: 300px;
         height: 400px;
         display: flex;
-        justify-content:center;
+        justify-content: center;
         align-items: center;
         margin: 0 auto;
-        
     }
-    
+
     .container__imagen img {
         width: 60%;
         height: 100%;
         object-fit: cover;
-        
     }
-    
+
     .container__description {
         min-width: 60px;
     }
-    
+
     .container-card {
         width: 300px;
         height: 420px;
-        
     }
-    .container-cards{
+
+    .container-cards {
         width: 350px;
     }
-    
-    /* footer responsive */
+
+    /* Footer */
     footer {
         min-width: 350px;
         min-height: 900px;
     }
-    
+
     .container__footer {
         flex-direction: column;
         justify-content: center;
@@ -437,7 +419,7 @@ i {
         height: 650px;
         row-gap: 15px;
     }
-    
+
     .container__footer-navegacion h4 {
         font-size: 1.2rem;
         width: 150px;
@@ -460,5 +442,4 @@ i {
     .politicas h4 {
         text-align: center;
     }
-
 }
