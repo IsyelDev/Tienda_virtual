@@ -162,22 +162,25 @@ section {
 main {
     height: auto;
     padding: 0.10px;
-    margin: 0 auto;
     overflow: hidden;
 
+    width: 100vw;
+    
 }
 
 .container-cards {
     min-width: 400px;
-    width: 1300px;
+    width: 1200px;
     margin: 0 auto;
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+
 }
 
 .container-card {
     width: 350px;
+
     height: 550px;
     display: flex;
     flex-direction: column;
