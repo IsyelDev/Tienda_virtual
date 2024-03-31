@@ -446,8 +446,12 @@ height: 15px;
     }
 
     .footer_iconos {
-        justify-content: center;
-        flex-wrap: wrap;
+         display: grid;
+         grid-template-columns: repeat(4, 1fr);
+         grid-template-rows: repeat(2, 1fr);
+         margin: 0 auto;
+
+
         font-size: 20px;
         max-width: 350px;
     }
@@ -460,5 +464,6 @@ height: 15px;
 
     .politicas h4 {
         text-align: center;
+        margin-top: 30px;
     }
 }
