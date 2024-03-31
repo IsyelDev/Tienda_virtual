@@ -440,6 +440,8 @@ height: 15px;
         row-gap: 15px;
     }
 
+
+
     .container__footer-navegacion h4 {
         font-size: 1.2rem;
         width: 150px;
@@ -459,10 +461,10 @@ height: 15px;
         flex-direction: column;
         row-gap: 50px;
         margin: 20px;
+
     }
 
     .politicas h4 {
         text-align: center;
-        margin-top: 40px;
     }
 }
