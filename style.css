@@ -9,6 +9,7 @@
 
 body{
     overflow-x: hidden;
+    
 }
 * {
     box-sizing: border-box;
@@ -171,6 +172,7 @@ main {
     flex-wrap: wrap;
     justify-content: center; /* Centra los elementos */
 
+
 }
 
 .container-card {
@@ -178,7 +180,7 @@ main {
     height: 550px;
     display: flex;
     flex-direction: column;
-    margin: 0px auto;
+    margin: 20px auto;
 }
 
 .container-card:hover {
@@ -216,6 +218,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 5px;
+    color:black;
 }
 
 .container__precio {
@@ -368,15 +371,13 @@ height: 15px;
     .container__lista li:hover {
         background-color: steelblue;
         transition: 2s ease;
-        color: darkblue;
+
     }
 
     /* Section */
     section {
         height: 200px;
-        border: 1px solid steelblue;
         min-width: 350px;
-        background-color: #06853f;
         padding: 0.10px;
     }
 
