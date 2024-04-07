@@ -437,7 +437,7 @@ height: 15px;
     /* Footer */
     footer {
         min-width: 350px;
-        min-height: 900px;
+        min-height: 800px;
     }
     .container__footer {
      display: grid;

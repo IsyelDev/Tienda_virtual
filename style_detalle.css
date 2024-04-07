@@ -368,6 +368,7 @@ footer {
     width: 100%;
     background-color: var(--footer);
     margin-bottom: 0;
+    font-size: 0.9rem;
 }
 
 .container__footer {
@@ -402,10 +403,11 @@ footer {
 .politicas {
     display: flex;
     justify-content: space-evenly;
-    margin: 0 180px;
-    width: 90%;
+    margin: 0 auto;
+    width: 70%;
     color: #F7F5F7;
     height: 10px;
+
 }
 
 .politicas h4 {
@@ -421,7 +423,10 @@ footer {
 
 .footer_iconos {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 30px;
+    height: 50px;
 }
 
 footer img {
@@ -579,9 +584,8 @@ footer img {
 
     .politicas {
         flex-direction: column;
-        row-gap: 50px;
-        margin: 20px;
-
+        margin: 20px auto;
+        gap: 50px;
     }
 
     .politicas h4 {
