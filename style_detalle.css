@@ -271,6 +271,12 @@ option {
     text-align: center;
 }
 
+.btn_add:hover {
+    background-color: steelblue;
+    color: white;
+    cursor: pointer;
+}
+
 /* Main */
 main {
     height: auto;

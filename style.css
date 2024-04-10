@@ -7,17 +7,19 @@
     --font-header: "Inter Tight", sans-serif;
 }
 
-body{
+body {
     overflow-x: hidden;
-    
+
 }
+
 * {
     box-sizing: border-box;
     padding: 0.10px;
     margin: 0px;
     text-decoration: none;
     list-style: none;
-    font-family: "Open Sans", sans-serif;;
+    font-family: "Open Sans", sans-serif;
+    ;
 }
 
 /* Header */
@@ -25,13 +27,15 @@ header {
     height: 150px;
     background-color: var(--header);
     width: 100%;
-    min-width: 350px; /* Modificado para responsive */
+    min-width: 350px;
+    /* Modificado para responsive */
     margin: 0 auto;
 
 }
 
 .container-header {
-    width: 100%; /* Modificado para responsive */
+    width: 100%;
+    /* Modificado para responsive */
     max-width: 1220px;
     margin: 0 auto;
     height: 150px;
@@ -65,7 +69,8 @@ input::placeholder {
     text-align: center;
     font-size: 1rem;
     color: gray;
-    opacity: 0.5; /* Cambiado a 0.5 */
+    opacity: 0.5;
+    /* Cambiado a 0.5 */
 }
 
 .container__navegacion {
@@ -114,14 +119,16 @@ i:hover {
 .container__lista a:hover {
     display: block;
     border-radius: 10px;
-    opacity: 0.5; /* Cambiado a 0.5 */
+    opacity: 0.5;
+    /* Cambiado a 0.5 */
     padding: 5px;
 }
 
 /* Section */
 section {
     height: 250px;
-    min-width: 350px; /* Modificado para responsive */
+    min-width: 350px;
+    /* Modificado para responsive */
     width: 100%;
     overflow: hidden;
 }
@@ -166,25 +173,23 @@ main {
 .container-cards {
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    justify-content: center; /* Centra los elementos */
-
-
+    margin:  auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
 }
 
 .container-card {
-    width: 350px;
-    height: 550px;
+    width: 300px;
+    height: 450px;
     display: flex;
     flex-direction: column;
     margin: 20px auto;
 }
 
 .container-card:hover {
-    opacity: 0.5; /* Cambiado a 0.5 */
+    opacity: 0.5;
+    /* Cambiado a 0.5 */
     margin-left: 5px;
     transition: .2 ease;
 }
@@ -192,18 +197,19 @@ main {
 
 .container__imagen {
     width: auto;
-    height: 400px;
+    height: 300px;
 }
 
 .container__imagen img {
     width: 100%;
     display: block;
-    height: 400px;
-    object-fit: cover;
-    
+    height: 250px;
+    object-fit: contain;
+    object-position: center center;
+
 }
 
-.container__description:hover{
+.container__description:hover {
     background-color: crimson;
     color: white;
 }
@@ -214,11 +220,13 @@ main {
     margin-bottom: 20px;
     width: 100%;
     padding: 20px;
+    height: 150px;
     border-radius: 0px 0px 20px 20px;
     display: flex;
     flex-direction: column;
     gap: 5px;
-    color:black;
+    color: black;
+
 }
 
 .container__precio {
@@ -227,7 +235,7 @@ main {
 }
 
 .container__description span {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 .container__description p {
@@ -239,7 +247,8 @@ main {
 footer {
     position: absolute;
     margin: 0;
-    min-width: 350px; /* Modificado para responsive */
+    min-width: 350px;
+    /* Modificado para responsive */
     height: 220px;
     width: 100%;
     background-color: var(--footer);
@@ -265,7 +274,8 @@ footer {
     color: white;
 }
 
-.container__footer-lista a ,.garantia{
+.container__footer-lista a,
+.garantia {
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
@@ -275,6 +285,7 @@ footer {
 .container__footer-lista li:first-child {
     font-weight: bold;
 }
+
 .politicas {
     display: flex;
     justify-content: space-evenly;
@@ -301,13 +312,13 @@ footer {
 }
 
 footer img {
-width: 15px;
-height: 15px;    
+    width: 15px;
+    height: 15px;
 }
 
 @media(max-width:768px) {
     /* Styles para pantallas de 768px o menos */
-    
+
     /* Header */
     header {
         min-width: 350px;
@@ -413,25 +424,26 @@ height: 15px;
         justify-content: center;
         align-items: center;
         margin: 0 auto;
+        outline: 1px solid red;
     }
 
     .container__imagen img {
         width: 100%;
         height: 100%;
-        object-fit: contain;
+        object-fit:contain;
     }
 
     .container__description {
-        min-width: 60px;
-    }
-
-    .container-card {
-        width: 300px;
-        height: 400px;
+        min-width: 100px;
+        height: 150px;
     }
 
     .container-cards {
-        width: 350px;
+        grid-template-columns: 1fr;
+    }
+    .container-card {
+        width: 300px;
+        height: 350px;
     }
 
     /* Footer */
@@ -439,20 +451,22 @@ height: 15px;
         min-width: 350px;
         min-height: 800px;
     }
+
     .container__footer {
-     display: grid;
-     grid-template-columns: repeat(1, 1fr);
-     height: 550px;
-     padding: 10px;
-     margin: 0 auto;
-     justify-content: center;
-     width: 150px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        height: 550px;
+        padding: 10px;
+        margin: 0 auto;
+        justify-content: center;
+        width: 150px;
     }
+
     .footer_iconos {
-         display: grid;
-         grid-template-columns: repeat(4, 1fr);
-         grid-template-rows: repeat(2, 1fr);
-         margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        margin: 0 auto;
         font-size: 20px;
         max-width: 350px;
     }
